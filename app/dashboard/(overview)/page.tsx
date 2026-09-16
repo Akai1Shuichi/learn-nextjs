@@ -1,9 +1,14 @@
 import CardWrapper from '@/app/ui/dashboard/cards';
 import { lusitana } from '@/app/ui/fonts';
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 import LatestInvoices from '../../ui/dashboard/latest-invoices';
 import RevenueChart from '../../ui/dashboard/revenue-chart';
+
+export const metadata: Metadata = {
+  title: 'Dashboard | Acme Dashboard',
+};
  
 export default async function Page() {
 
